@@ -13,7 +13,7 @@ const Discord = require("discord.js");
          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
 
 
-           member.send( `${member} : ` + message.content.substr(3));
+           member.send( `${member} ! ` + message.content.substr(3));
                                                       message.delete();
             
                                                     });

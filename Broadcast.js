@@ -2,13 +2,13 @@ const Discord = require("discord.js");
   const kboosh = new Discord.Client();
     const kbooshtoken = "NDg5NTQ3NzQyMDE2ODMxNDkx.DnsWaQ.X3nJbJh4LlnJTvTYXyrrRkwpPhs"
       kboosh.on('ready', () => {
-        kboosh.user.setGame(`g!`,'https://www.twitch.tv/TEST-Broadcast');
+        kboosh.user.setGame(`f!b`,'https://www.twitch.tv/TEST-Broadcast');
           console.log('Im Ready!');
   
         });
 
   kboosh.on('message', message => {
-    if (message.content.split(' ')[0] == 'g!')
+    if (message.content.split(' ')[0] == 'f!')
        message.guild.members.forEach( member => {
          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
 
@@ -20,7 +20,7 @@ const Discord = require("discord.js");
             
                                                   });
    kboosh.on("message", message => {
-       var prefix = "g!";
+       var prefix = "f!";
  
              var args = message.content.substring(prefix.length).split(" ");
                 if (message.content.startsWith(prefix + "b")) {
